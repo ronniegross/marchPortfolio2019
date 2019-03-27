@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
 import HeaderContainer from './components/Header.js'
+import NavBar from './components/NavBar.js'
 
 const TileContainer = styled.div`
     display: flex;
@@ -14,7 +15,7 @@ const TileContainer = styled.div`
 
 const Tile = styled.div`
     background-color: #595959;
-    width: 40%;
+    width: 45%;
     height: 400px;
     margin: 20px;
     border-radius: 10px;
@@ -29,6 +30,7 @@ class App extends Component {
         return (
             <div>
                 <HeaderContainer />
+                <NavBar />
                 <TileContainer>  
                     <Tile>                                                 
                         <img src="" alt=""></img>
