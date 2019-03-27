@@ -1,28 +1,61 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components'
+import HeaderContainer from './components/Header.js'
+
+const TileContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @media (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+    }
+`
+
+const Tile = styled.div`
+    background-color: #595959;
+    width: 40%;
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    @media (max-width: 800px) {
+        width: 70%;
+        height: 300px;
+    }
+`
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <HeaderContainer />
+                <TileContainer>  
+                    <Tile>                                                 
+                        <img src="" alt=""></img>
+                    </Tile>
+                    <Tile>
+                        <img src="" alt=""></img>
+                    </Tile>
+                </TileContainer>
+                <TileContainer>  
+                    <Tile>                                                 
+                        <img src="" alt=""></img>
+                    </Tile>
+                    <Tile>
+                        <img src="" alt=""></img>
+                    </Tile>
+                </TileContainer>
+                <TileContainer>  
+                    <Tile>                                                 
+                        <img src="" alt=""></img>
+                    </Tile>
+                    <Tile>
+                        <img src="" alt=""></img>
+                    </Tile>
+                </TileContainer>
+            </div>
+        );
+    }
 }
 
 export default App;
