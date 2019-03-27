@@ -2,59 +2,28 @@ import React, { Component } from 'react';
 import styled from 'styled-components'
 import HeaderContainer from './components/Header.js'
 import NavBar from './components/NavBar.js'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Home from './components/Home.js'
+import About from './components/About.js'
+import Resume from './components/Resume.js'
+import Contact from './components/Contact.js'
 
-const TileContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    @media (max-width: 800px) {
-        flex-direction: column;
-        align-items: center;
-    }
-`
 
-const Tile = styled.div`
-    background-color: #595959;
-    width: 45%;
-    height: 400px;
-    margin: 20px;
-    border-radius: 10px;
-    @media (max-width: 800px) {
-        width: 70%;
-        height: 300px;
-    }
-`
 
 class App extends Component {
     render() {
         return (
             <div>
-                <HeaderContainer />
-                <NavBar />
-                <TileContainer>  
-                    <Tile>                                                 
-                        <img src="" alt=""></img>
-                    </Tile>
-                    <Tile>
-                        <img src="" alt=""></img>
-                    </Tile>
-                </TileContainer>
-                <TileContainer>  
-                    <Tile>                                                 
-                        <img src="" alt=""></img>
-                    </Tile>
-                    <Tile>
-                        <img src="" alt=""></img>
-                    </Tile>
-                </TileContainer>
-                <TileContainer>  
-                    <Tile>                                                 
-                        <img src="" alt=""></img>
-                    </Tile>
-                    <Tile>
-                        <img src="" alt=""></img>
-                    </Tile>
-                </TileContainer>
+                <Router>
+                    <HeaderContainer />
+                    <NavBar></NavBar>
+                    <Switch>
+                        <Route exact path="/" component={Home} />
+                        <Route exact path="/about" component={About} />
+                        <Route exact path="/:userId/cheeses" component={Resume} />
+                        <Route exact path="/:userId/cheeses/:cheeseId" component={Contact} />
+                    </Switch>
+                </Router>
             </div>
         );
     }

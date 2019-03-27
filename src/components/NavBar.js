@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const NavContainer = styled.div`
     height: 60px;
@@ -31,12 +32,12 @@ export default class NavBar extends Component {
         return (
             <div>
                 <NavContainer>
-                <ul>
-                    <a href="/"><li>Projects</li></a>
-                    <a href="/about"><li>About</li></a>
-                    <a href="/resume"><li>Resume</li></a>
-                    <a href="/contact"><li>Contact</li></a>
-                </ul>
+                    <ul>
+                        <li><Link to="/">Projects</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/resume">Resume</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
+                    </ul>
                 </NavContainer>
             </div>
         )
