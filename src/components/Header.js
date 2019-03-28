@@ -9,7 +9,7 @@ const HeaderContainer = styled.div`
     h1 {
         margin: 10px 0 3px 0;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color: #FF5000;
+        color: #FF3100;
         font-size: 40px;
     }
     h2 {

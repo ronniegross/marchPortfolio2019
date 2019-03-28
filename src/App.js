@@ -12,18 +12,30 @@ import Project from './components/Project'
 const gnarniaData = {
     name: "Gnarnia: Lift Ticket and Gear Rental App",
     homePagePic: "https://i.imgur.com/hYHtF7s.jpg",
-    description: "",
-    techUsed: "",
-    deployedAppLink: "",
+    goal: "To create an application that will allow users to reserve snowboarding gear, ski gear, and a lift ticket in order to achieve radical gnar",
+    description: [
+        "Has at least 3 models",
+        "Has full CRUD on at least one of your models",
+        "Be able to add / delete on any remaining models",
+        "Use the Mongoose library to write Mongo queries",
+        "Have high quality code",
+        "Efficient code- if you have your MVP, refactor",
+        "DRY (Don't Repeat Yourself) code",
+        "Be deployed on Heroku"
+    ],
+    techUsed: [],
+    deployedAppLink: "https://gnarnia.herokuapp.com/",
     gitHubLink: "",
     trelloLink: "",
     requirements: "",
     goals: "",
-    mockup1: "",
-    mockup2: "",
-    mockup3: "",
-    mockup4: "",
-    mockup5: "",
+    ERD: "https://i.imgur.com/BiAMPcj.jpg",
+    mockups: [
+        {
+            number: "1",
+            link: "https://i.imgur.com/BiAMPcj.jpg"
+        },
+    ],
     version2: "",
     finalThoughts: "",
     UXprocess: "",
@@ -36,6 +48,7 @@ const Gnarnia = () => {
 const project2 = {
     name: "",
     homePagePic: "",
+    goal: "",
     description: "",
     techUsed: "",
     deployedAppLink: "",
