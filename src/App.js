@@ -7,8 +7,18 @@ import Home from './components/Home.js'
 import About from './components/About.js'
 import Resume from './components/Resume.js'
 import Contact from './components/Contact.js'
+import Project from './components/Project'
 
+const project1Data = {
+    name: "derp",
+    description: "stuff and things"
+}
 
+const Project1 = () => {
+    return <Project project={project1Data}/>
+}
+
+const project2 = {};
 
 class App extends Component {
     render() {
@@ -20,8 +30,9 @@ class App extends Component {
                     <Switch>
                         <Route exact path="/" component={Home} />
                         <Route exact path="/about" component={About} />
-                        <Route exact path="/:userId/cheeses" component={Resume} />
-                        <Route exact path="/:userId/cheeses/:cheeseId" component={Contact} />
+                        <Route exact path="/resume" component={Resume} />
+                        <Route exact path="/contact" component={Contact} />
+                        <Route exact path="/project1" component={Project1} />
                     </Switch>
                 </Router>
             </div>

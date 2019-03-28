@@ -6,8 +6,25 @@ const AboutContainer = styled.div`
     margin: 0;
     display: flex;
     flex-direction: row;
+    /* justify-content: center; */
+    img {
+        width: 300px;
+        display: block; 
+        margin: 0 auto;
+    }
     .headshotContainer {
-        width: 30%;
+        margin-right: 25px;
+        /* width: 300px; */
+    }
+    p {
+        margin: 0;
+    }
+    @media (max-width: 750px) {
+        flex-direction: column;
+        align-content: center;
+        p {
+            margin: 20px 0 0 0;
+        }
     }
 `
 

@@ -25,6 +25,9 @@ const NavContainer = styled.div`
         text-decoration: none;
         color: #2F2F2F;
     }
+    @media (max-width: 500px) {
+        margin: 10px 0 20px 0;
+    }
 `
 
 export default class NavBar extends Component {
