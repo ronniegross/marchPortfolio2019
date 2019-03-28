@@ -9,16 +9,50 @@ import Resume from './components/Resume.js'
 import Contact from './components/Contact.js'
 import Project from './components/Project'
 
-const project1Data = {
-    name: "derp",
-    description: "stuff and things"
+const gnarniaData = {
+    name: "Gnarnia: Lift Ticket and Gear Rental App",
+    homePagePic: "https://i.imgur.com/hYHtF7s.jpg",
+    description: "",
+    techUsed: "",
+    deployedAppLink: "",
+    gitHubLink: "",
+    trelloLink: "",
+    requirements: "",
+    goals: "",
+    mockup1: "",
+    mockup2: "",
+    mockup3: "",
+    mockup4: "",
+    mockup5: "",
+    version2: "",
+    finalThoughts: "",
+    UXprocess: "",
 }
 
-const Project1 = () => {
-    return <Project project={project1Data}/>
+const Gnarnia = () => {
+    return <Project project={gnarniaData}/>
 }
 
-const project2 = {};
+const project2 = {
+    name: "",
+    homePagePic: "",
+    description: "",
+    techUsed: "",
+    deployedAppLink: "",
+    gitHubLink: "",
+    trelloLink: "",
+    requirements: "",
+    goals: "",
+    mockup1: "",
+    mockup2: "",
+    mockup3: "",
+    mockup4: "",
+    mockup5: "",
+    version2: "",
+    finalThoughts: "",
+    UXprocess: "",
+
+};
 
 class App extends Component {
     render() {
@@ -32,7 +66,7 @@ class App extends Component {
                         <Route exact path="/about" component={About} />
                         <Route exact path="/resume" component={Resume} />
                         <Route exact path="/contact" component={Contact} />
-                        <Route exact path="/project1" component={Project1} />
+                        <Route exact path="/project1" component={Gnarnia} />
                     </Switch>
                 </Router>
             </div>

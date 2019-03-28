@@ -1,12 +1,25 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
+
+const ProjectWrapper = styled.div`
+    h1 {
+        color: #2F2F2F;
+    }
+    img {
+        width: 70%;
+    }
+`
+
 
 export default class Project extends Component {
     render() {
         return (
             <div>
-                <h1>{this.props.project.name}</h1>
-                <p>{this.props.project.description}</p>
-                {/* <img href={this.props.project.homePagePic} alt="Home Page Pic"></img> */}
+                <ProjectWrapper>
+                    <h1>{this.props.project.name}</h1>
+                    <img src={this.props.project.homePagePic} alt="Home Page Pic"></img>
+                    <p>{this.props.project.description}</p>
+                </ProjectWrapper>
             </div>
         )
     }
