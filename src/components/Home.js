@@ -49,14 +49,26 @@ export default class Home extends Component {
         return (
             <div>
                 <TileContainer>
-                    <Link to={'/project1'}>
+                    <Link to={'/gnarnia'}>
                         <Tile>
                             <img src="https://i.imgur.com/JVoO6Vc.png" alt="Gnarnia"></img>
                         </Tile>
                     </Link>
-                    <Link to={'/project2'}>
+                    <Link to={'/hangman'}>
                         <Tile>
                             <img src="https://i.imgur.com/T7vIJfb.png" alt="Hangman Game"></img>
+                        </Tile>
+                    </Link>
+                </TileContainer>
+                <TileContainer>
+                    <Link to={'/fromage'}>
+                        <Tile>
+                            <img src="https://i.imgur.com/RMgYAv0.png" alt="Fromage"></img>
+                        </Tile>
+                    </Link>
+                    <Link to={'/SkydiveGreeneCounty'}>
+                        <Tile>
+                            <img src="https://i.imgur.com/YSiWjvV.png" alt="SGC"></img>
                         </Tile>
                     </Link>
                 </TileContainer>
@@ -64,3 +76,4 @@ export default class Home extends Component {
         )
     }
 }
+
