@@ -3,12 +3,31 @@ import styled from 'styled-components'
 import UnderConstruction from './UnderConstruction';
 import { Redirect } from 'react-router-dom';
 
+
+
+
 const ProjectWrapper = styled.div`
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* align-items: center; */
     h1 {
         color: #2F2F2F;
+        font-family: 'Libre Baskerville', serif;
     }
     img {
         width: 70%;
+    }
+    h3 {
+        font-family: 'Libre Baskerville', serif;
+    }
+    p {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    h4 {
+        font-family: 'Libre Baskerville', serif;
     }
 `
 
@@ -69,8 +88,8 @@ export default class Project extends Component {
                         })
                     }
                     <div>
+                        <h3>Version 2:</h3>
                         <ul>
-                            <h3>Version 2:</h3>
                             {
                                 this.props.project.version2.map(version2idea => {
                                     return (
@@ -81,8 +100,8 @@ export default class Project extends Component {
                         </ul>
                     </div>
                     <div>
+                        {this.props.project.reflections.length > 0 ? <h3>Reflections:</h3> : null}
                         <ul>
-                            {this.props.project.reflections.length > 0 ? <h3>Reflections:</h3> : null}
                             {this.props.project.reflections.length > 0 ?
                                 this.props.project.reflections.map(singleReflection => {
                                     return (
