@@ -39,23 +39,23 @@ const gnarniaData = {
     ERD: "https://github.com/ronniegross/projectTwo/blob/master/gnarnia%20mockups%20readme/ERD_Final_Gnarnia.jpg?raw=true",
     mockups: [
         {
-            name: "log in",
+            name: "Log In",
             link: "https://github.com/ronniegross/projectTwo/blob/master/gnarnia%20mockups%20readme/landing_page_mvp.jpg?raw=true"
         },
         {
-            name: "sign up",
+            name: "Sign Up",
             link: "https://github.com/ronniegross/projectTwo/blob/master/gnarnia%20mockups%20readme/sign_up_mvp.jpg?raw=true"
         },
         {
-            name: "home page",
+            name: "Home",
             link: "https://github.com/ronniegross/projectTwo/blob/master/gnarnia%20mockups%20readme/home_mvp.jpg?raw=true"
         },
         {
-            name: "order page",
+            name: "Order",
             link: "https://github.com/ronniegross/projectTwo/blob/master/gnarnia%20mockups%20readme/order_page_mvp.jpg?raw=true"
         },
         {
-            name: "payment info",
+            name: "Payment Info",
             link: "https://github.com/ronniegross/projectTwo/blob/master/gnarnia%20mockups%20readme/payment_info_mvp.jpg?raw=true"
         },
     ],
@@ -109,15 +109,15 @@ const hangmanData = {
     gitHubLink: "https://github.com/ronniegross/ProjectOne",
     mockups: [
         {
-            name: "winner",
+            name: "Winner",
             link: "https://github.com/ronniegross/ProjectOne/blob/master/mockups/iteration%202.2.jpg?raw=true"
         },
         {
-            name: "loser",
+            name: "Loser",
             link: "https://github.com/ronniegross/ProjectOne/blob/master/mockups/iteration%202.3.jpg?raw=true"
         },
         {
-            name: "tutorial",
+            name: "Tutorial",
             link: "https://github.com/ronniegross/ProjectOne/blob/master/mockups/iteration%202.4.jpg?raw=true"
         }
     ],

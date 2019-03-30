@@ -16,18 +16,59 @@ const ProjectWrapper = styled.div`
     h1 {
         color: #2F2F2F;
         font-family: 'Libre Baskerville', serif;
+        margin-bottom: 15px;
     }
     img {
         width: 70%;
     }
     h3 {
         font-family: 'Libre Baskerville', serif;
+        margin-bottom: 15px;
     }
     p {
         font-family: 'Source Sans Pro', sans-serif;
+        margin: 0;
     }
     h4 {
         font-family: 'Libre Baskerville', serif;
+        margin-bottom: 15px;
+    }
+    ul {
+        margin: 0;
+    }
+    li {
+        padding: 3px;
+    }
+    h3.listTitle {
+        margin-bottom: 10px;
+    }
+    footer {
+        height: 40px;
+    }
+    @media (max-width: 500px) {
+        img {
+            width: 100%;
+        }
+        margin-left: 0px;
+        h1 {
+            font-size: 18px;
+            text-align: center;
+        }
+        h3 {
+            margin: 0 10px 0 10px;
+            font-size: 14px;
+        }
+        p {
+            margin-left: 10px;
+            font-size: 16px;
+        }
+        h4 {
+            margin-left: 10px;
+        }
+        li {
+            font-size: 14px;
+            margin: 0;
+        }
     }
 `
 
@@ -47,7 +88,7 @@ export default class Project extends Component {
                     <img src={this.props.project.homePagePic} alt="Home Page Pic"></img>
                     <h3>Goal:</h3>
                     <p>{this.props.project.goal}</p>
-                    <h3>Technologies Used:</h3>
+                    <h3 className="listTitle">Technologies Used:</h3>
                     <div>
                         <ul>
                             {this.props.project.techUsed.map(singleTech => {
@@ -59,7 +100,7 @@ export default class Project extends Component {
                             })}
                         </ul>
                     </div>
-                    <h3>Description:</h3>
+                    <h3 className="listTitle">Description:</h3>
                     <ul>
                         {
                             this.props.project.description.map(singleDescription => {
@@ -88,7 +129,7 @@ export default class Project extends Component {
                         })
                     }
                     <div>
-                        <h3>Version 2:</h3>
+                        <h3 className="listTitle">Version 2:</h3>
                         <ul>
                             {
                                 this.props.project.version2.map(version2idea => {
@@ -100,7 +141,7 @@ export default class Project extends Component {
                         </ul>
                     </div>
                     <div>
-                        {this.props.project.reflections.length > 0 ? <h3>Reflections:</h3> : null}
+                        {this.props.project.reflections.length > 0 ? <h3 className="listTitle">Reflections:</h3> : null}
                         <ul>
                             {this.props.project.reflections.length > 0 ?
                                 this.props.project.reflections.map(singleReflection => {
@@ -111,6 +152,7 @@ export default class Project extends Component {
                                 : null}
                         </ul>
                     </div>
+                    <footer></footer>
                 </ProjectWrapper>
             </div>
         )
