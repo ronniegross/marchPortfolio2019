@@ -8,6 +8,7 @@ import About from './components/About.js'
 import Resume from './components/Resume.js'
 import Contact from './components/Contact.js'
 import Project from './components/Project'
+import UnderConstruction from './components/UnderConstruction'
 
 
 // Gnarnia
@@ -126,8 +127,8 @@ const hangmanData = {
         "test out different colored hangman svg for a better user experience"
     ],
     reflections: [
-        "Reflection blah",
-        "Reflection blah"
+        // "Reflection blah",
+        // "Reflection blah"
     ],
     UXprocess: "",
     underContruction: false
@@ -165,7 +166,7 @@ const fromageData = {
         ""
     ],
     UXprocess: "",
-    underContruction: true
+    underConstruction: true
 };
 
 const Fromage = () => {
@@ -200,7 +201,7 @@ const sgcData = {
         ""
     ],
     UXprocess: "",
-    underContruction: true
+    underConstruction: true
 };
 
 const Sgc = () => {
@@ -223,6 +224,7 @@ class App extends Component {
                         <Route exact path="/hangman" component={Hangman} />
                         <Route exact path="/fromage" component={Fromage} />
                         <Route exact path="/SkydiveGreeneCounty" component={Sgc} />
+                        <Route exact path="/underconstruction" component={UnderConstruction} />
                     </Switch>
                 </Router>
             </div>

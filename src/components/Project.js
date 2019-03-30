@@ -13,31 +13,13 @@ const ProjectWrapper = styled.div`
 `
 
 export default class Project extends Component {
-    state = {
-        description: [],
-        techUsed: [],
-        mockups: [],
-        version2: [],
-        reflections: [],
-        underConstruction: false
-    }
-
-    componentDidMount = () => {
-        this.setState({
-            description: this.props.project.description,
-            techUsed: this.props.project.techUsed,
-            mockups: this.props.project.mockups,
-            version2: this.props.project.version2,
-            reflections: this.props.project.reflections,
-            underConstruction: this.props.project.underConstruction
-        })
-    }
 
     render() {
         // i know that i need a ternary statement to see if there is information within various array but where
         // and how
-        if (this.state.underConstruction === true) {
-            return (<Redirect to="/"/>)
+        console.log(this.props)
+        if (this.props.project.underConstruction === true) {
+            return (<Redirect to={`/underconstruction`} />)
         }
         return (
             <div>
@@ -47,46 +29,37 @@ export default class Project extends Component {
                     <h3>Goal:</h3>
                     <p>{this.props.project.goal}</p>
                     <h3>Technologies Used:</h3>
-                    {/* {if (this.state.techUsed != "" ?
-                                   this.state.techUsed.map(singleTech => {
-                                    return (
-                                        <div>
-                                            <ul>
-                                                <li>{singleTech}</li>
-                                            </ul>
-                                        </div>
-                                    )
-                                })
-                                : null
-                    )} */}
-                    {this.state.techUsed.map(singleTech => {
-                        return (
-                            <div>
-                                <ul>
+                    <div>
+                        <ul>
+                            {this.props.project.techUsed.map(singleTech => {
+                                return (
+
                                     <li>{singleTech}</li>
-                                </ul>
-                            </div>
-                        )
-                    })}
+
+                                )
+                            })}
+                        </ul>
+                    </div>
                     <h3>Description:</h3>
-                    {
-                        this.state.description.map(singleDescription => {
-                            return (
-                                <div>
-                                    <ul>
-                                        <li>{singleDescription}</li>
-                                    </ul>
-                                </div>
-                            )
-                        })
-                    }
+                    <ul>
+                        {
+                            this.props.project.description.map(singleDescription => {
+                                return (
+                                    <li>{singleDescription}</li>
+                                )
+                            })
+                        }
+                    </ul>
                     <h3><a href={this.props.deployedAppLink}>Link </a>To Deployed App</h3>
                     <h3><a href={this.props.deployedAppLink}>Link </a>To Github</h3>
-                    <h3>ERD</h3>
-                    <img src={this.props.project.ERD} alt="ERD"></img>
+                    {
+
+                    }
+                    {this.props.project.erd ? <h3>ERD</h3> : null}
+                    {this.props.project.erd ? <img src={this.props.project.ERD} alt="ERD"></img> : null}
                     <h3>Mockups</h3>
                     {
-                        this.state.mockups.map(singleMockup => {
+                        this.props.project.mockups.map(singleMockup => {
                             return (
                                 <div key="mockup">
                                     <h4>{singleMockup.name}</h4>
@@ -95,31 +68,30 @@ export default class Project extends Component {
                             )
                         })
                     }
-                    <h3>Version 2:</h3>
-                    {
-                        this.state.version2.map(version2idea => {
-                            return (
-                                <div>
-                                    <ul>
+                    <div>
+                        <ul>
+                            <h3>Version 2:</h3>
+                            {
+                                this.props.project.version2.map(version2idea => {
+                                    return (
                                         <li>{version2idea}</li>
-                                    </ul>
-                                </div>
-                            )
-                        })
-                    }
-                    <h3>Reflections:</h3>
-                    {
-                        this.state.reflections.map(singleReflection => {
-                            return (
-                                <div>
-                                    <ul>
+                                    )
+                                })
+                            }
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            {this.props.project.reflections.length > 0 ? <h3>Reflections:</h3> : null}
+                            {this.props.project.reflections.length > 0 ?
+                                this.props.project.reflections.map(singleReflection => {
+                                    return (
                                         <li>{singleReflection}</li>
-                                    </ul>
-                                </div>
-                            )
-                        })
-                    }
-
+                                    )
+                                })
+                                : null}
+                        </ul>
+                    </div>
                 </ProjectWrapper>
             </div>
         )

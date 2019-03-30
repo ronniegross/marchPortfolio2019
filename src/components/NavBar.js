@@ -27,6 +27,11 @@ const NavContainer = styled.div`
     }
     @media (max-width: 500px) {
         margin: 10px 0 20px 0;
+        align-items: center;
+        width: 100%;
+        a {
+            font-size: 14px;
+        }
     }
 `
 
