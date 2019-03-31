@@ -18,6 +18,7 @@ const AboutContainer = styled.div`
     }
     p {
         margin: 0;
+        font-family: 'Source Sans Pro', sans-serif;
     }
     @media (max-width: 750px) {
         flex-direction: column;
@@ -37,8 +38,31 @@ export default class About extends Component {
                         <img src="https://i.imgur.com/8uBHPES.jpg" alt="headshot"></img>
                     </div>
                     <div className="infoContainer">
-                        <p>Ramps snackwave small batch enamel pin waistcoat XOXO thundercats leggings chillwave organic lumbersexual palo santo stumptown mustache brunch. Cliche keytar retro, heirloom banjo tousled pok pok drinking vinegar. Glossier deep v kinfolk pug mustache put a bird on it leggings lomo pinterest chicharrones cornhole fanny pack street art bicycle rights. Pork belly copper mug ethical selvage gastropub VHS viral gluten-free keytar +1 banjo tbh austin normcore next level. Kickstarter banjo meh fam shaman keytar, tote bag flannel activated charcoal yuccie.
-                        Copper mug sustainable hella drinking vinegar banh mi sartorial truffaut mlkshk live-edge kinfolk authentic pop-up post-ironic meditation. Ugh celiac bitters roof party, deep v dreamcatcher hammock taiyaki bushwick drinking vinegar succulents. Austin chia pug, wolf hot chicken four loko venmo yuccie. XOXO hell of tattooed vape enamel pin artisan. Health goth brunch messenger bag synth readymade.</p>
+                    <p>Hey there! Thanks for checking out my portfolio. 
+                                My name is Ronnie, and I’m glad you stopped by!<br/><br/>
+                            I spent years at the Georgia Institute of Technology studying 
+                            tangible design, and made the jump to User Experience Design 
+                            while studying at the Eindhoven University of Technology in Eindhoven, 
+                            Netherlands. I graduated from Georgia Tech in December of 2017 with a 
+                            degree in Industrial Design, and decided to pursue a career in UX 
+                            Design in January of 2018.<br/><br/>
+                            I stepped down from my role in July of 2018 to focus on an illness 
+                                in my immediate family. The silver lining of that situation was 
+                                that I had free time, which I decided to fill by teaching myself 
+                                to code. I fell in love with programming during those months, and 
+                                decided to attend General Assembly’s Software Development Immersive 
+                                Bootcamp in January of 2019 to learn how to build full stack applications.<br/><br/>
+                            While I absolutely subscribe to the belief of being a creative 
+                                problem solver, my true passion lies in diving deep into the 
+                                problem space to guarantee the solution I’m creating is solving 
+                                the correct problem. Research, analysis, iterative design, and 
+                                testing were  core pillars of my design career, and I believe my 
+                                experience in these areas makes me a unique developer. Not only 
+                                can I create beautiful solutions, but I understand the “why” 
+                                behind what I’m creating.<br/><br/>
+                            I hope you’ve enjoyed checking out my featured applications and projects! 
+                                Please feel free to contact if you have any questions, 
+                                comments, of if you’d like to collaborate.</p>
                     </div>
                 </AboutContainer>
             </div>

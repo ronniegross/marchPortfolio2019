@@ -33,7 +33,7 @@ const NavContainer = styled.div`
         justify-content: space-around;
         margin: 10px 0 20px 0;
         align-items: center;
-        width: 110%;
+        width: 100%;
         a {
             font-size: 14px;
         }

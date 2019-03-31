@@ -23,7 +23,7 @@ const ProjectWrapper = styled.div`
     }
     h3 {
         font-family: 'Libre Baskerville', serif;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     p {
         font-family: 'Source Sans Pro', sans-serif;
@@ -45,17 +45,48 @@ const ProjectWrapper = styled.div`
     footer {
         height: 40px;
     }
+    .mockupTitle {
+        margin-bottom: 0px;
+    }
+    .singleMockupName {
+        text-decoration: underline;
+    }
+    /* .githubLink {
+        margin-top: 5px;
+    } */
+    h3.deployedLink {
+        margin-top: 30px;
+    }
+    a {
+        text-decoration: none;
+        color: #FF3100;
+    }
+    .goalTitle {
+        margin-bottom: 15px;
+    }
+    @media (max-width: 1100px) {
+        img {
+            width: 90%;
+        }
+    }
     @media (max-width: 500px) {
         img {
             width: 100%;
         }
         margin-left: 0px;
+        h3.deployedLink {
+            margin-top: 15px;
+        }
+        h3.githubLink {
+            margin-bottom: 7px;
+        }
         h1 {
-            font-size: 18px;
-            text-align: center;
+            font-size: 20px;
+            margin-left: 10px;
+            /* text-align: center; */
         }
         h3 {
-            margin: 0 10px 0 10px;
+            margin: 10px 10px 0 10px;
             font-size: 14px;
         }
         p {
@@ -64,6 +95,7 @@ const ProjectWrapper = styled.div`
         }
         h4 {
             margin-left: 10px;
+            font-size: 12px;
         }
         li {
             font-size: 14px;
@@ -86,8 +118,11 @@ export default class Project extends Component {
                 <ProjectWrapper>
                     <h1>{this.props.project.name}</h1>
                     <img src={this.props.project.homePagePic} alt="Home Page Pic"></img>
-                    <h3>Goal:</h3>
+                    <h3 className="goalTitle">Goal:</h3>
                     <p>{this.props.project.goal}</p>
+                    <h3 className="deployedLink"><a href={this.props.project.deployedAppLink}>Link </a>To Deployed App</h3>
+                    <h3 className="githubLink"><a href={this.props.project.gitHubLink}>Link </a>To Github</h3>
+
                     <h3 className="listTitle">Technologies Used:</h3>
                     <div>
                         <ul>
@@ -110,19 +145,14 @@ export default class Project extends Component {
                             })
                         }
                     </ul>
-                    <h3><a href={this.props.deployedAppLink}>Link </a>To Deployed App</h3>
-                    <h3><a href={this.props.deployedAppLink}>Link </a>To Github</h3>
-                    {
-
-                    }
                     {this.props.project.erd ? <h3>ERD</h3> : null}
                     {this.props.project.erd ? <img src={this.props.project.ERD} alt="ERD"></img> : null}
-                    <h3>Mockups</h3>
+                    <h3 className="mockupTitle">Mockups</h3>
                     {
                         this.props.project.mockups.map(singleMockup => {
                             return (
                                 <div key="mockup">
-                                    <h4>{singleMockup.name}</h4>
+                                    <h4 className="singleMockupName">{singleMockup.name}</h4>
                                     <img src={singleMockup.link} alt="Mockup"></img>
                                 </div>
                             )

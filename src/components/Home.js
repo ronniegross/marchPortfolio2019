@@ -32,9 +32,19 @@ const Tile = styled.div`
             width: 400px;
         }
     }
+    @media (max-width: 850px) {
+        img {
+            width: 350px;
+        }
+    }
     @media (max-width: 400px) {
         img {
             width: 350px;
+        }
+    }
+    @media (max-width: 375px) {
+        img {
+            width: 300px;
         }
     }
     /* @media (max-width: 850px) {

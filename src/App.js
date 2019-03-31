@@ -18,10 +18,10 @@ const gnarniaData = {
     goal: "To create an application that will allow users to reserve snowboarding gear, ski gear, and a lift ticket in order to achieve radical gnar",
     description: [
         "Has at least 3 models",
-        "Has full CRUD on at least one of your models",
-        "Be able to add / delete on any remaining models",
+        "Has full CRUD on at least one model",
+        "Ability to add / delete on any remaining models",
         "Use the Mongoose library to write Mongo queries",
-        "Have high quality code",
+        "Has high quality code",
         "Efficient code- if you have your MVP, refactor",
         "DRY (Don't Repeat Yourself) code",
         "Be deployed on Heroku"
@@ -94,7 +94,7 @@ const hangmanData = {
         "Demonstrate your ability to use HTML and CSS to build and style an intuitive web application",
         "Demonstrate your competancy in DOM manipulation using JavaScript",
         "Publish your source code to GitHub with a solid README.md describing the project",
-        "Deploy your application to a production environment such as BitBalloon",
+        "Deploy your application to a production environment such as Netlify",
         "Present your project in a presentation style format"
     ],
     techUsed: [
@@ -105,7 +105,7 @@ const hangmanData = {
         "jQuery",
         "SVG files"
     ],
-    deployedAppLink: "",
+    deployedAppLink: "https://vigilant-booth-9dc719.netlify.com/",
     gitHubLink: "https://github.com/ronniegross/ProjectOne",
     mockups: [
         {
