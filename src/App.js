@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import styled from 'styled-components'
 import HeaderContainer from './components/Header.js'
 import NavBar from './components/NavBar.js'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as HashRouter, Route, Switch } from 'react-router-dom'
+
 import Home from './components/Home.js'
 import About from './components/About.js'
 import Resume from './components/Resume.js'
@@ -212,7 +214,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Router>
+                <HashRouter>
                     <HeaderContainer />
                     <NavBar></NavBar>
                     <Switch>
@@ -226,7 +228,7 @@ class App extends Component {
                         <Route exact path="/SkydiveGreeneCounty" component={Sgc} />
                         <Route exact path="/underconstruction" component={UnderConstruction} />
                     </Switch>
-                </Router>
+                </HashRouter>
             </div>
         );
     }
