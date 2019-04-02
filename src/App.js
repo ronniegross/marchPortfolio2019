@@ -214,7 +214,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Router basename={process.env.PUBLIC_URL}>
+                <Router>
                     <HeaderContainer />
                     <NavBar></NavBar>
                     <Switch>
