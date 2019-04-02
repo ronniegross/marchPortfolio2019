@@ -28,6 +28,7 @@ const gnarniaData = {
         "DRY (Don't Repeat Yourself) code",
         "Be deployed on Heroku"
     ],
+    mobileResponsive: 'No',
     techUsed: [
         "Node",
         "MongoDB",
@@ -99,6 +100,7 @@ const hangmanData = {
         "Deploy your application to a production environment such as Netlify",
         "Present your project in a presentation style format"
     ],
+    mobileResponsive: 'No',
     techUsed: [
         "HTML",
         "CSS",
@@ -154,6 +156,7 @@ const fromageData = {
         "Use the Mongoose library to write Mongo queries",
         "Be deployed on Heroku"
     ],
+    mobileResponsive: 'Yes',
     techUsed: [
         "React",
         "Express",

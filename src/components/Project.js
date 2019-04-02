@@ -65,6 +65,9 @@ const ProjectWrapper = styled.div`
     .goalTitle {
         margin-bottom: 15px;
     }
+    h3.mobileResponsiveTitle {
+        margin-top: 30px;
+    }
     @media (max-width: 1100px) {
         img {
             width: 90%;
@@ -104,6 +107,10 @@ const ProjectWrapper = styled.div`
             /* margin: 0; */
             margin-right: 5px;
         }
+        h3.mobileResponsiveTitle {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        }
     }
 `
 
@@ -138,6 +145,7 @@ export default class Project extends Component {
                             })}
                         </ul>
                     </div>
+                    <h3 className="mobileResponsiveTitle">Mobile Responsive: {this.props.project.mobileResponsive}</h3>
                     <h3 className="listTitle">Description:</h3>
                     <ul>
                         {
