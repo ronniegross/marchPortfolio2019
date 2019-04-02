@@ -35,7 +35,7 @@ const NavContainer = styled.div`
         align-items: center;
         width: 100%;
         a {
-            font-size: 14px;
+            font-size: 18px;
         }
         ul {
             margin: 0;
