@@ -15,11 +15,11 @@
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts build && cp build/index.html build/404.html",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://ronniegross.github.io/marchPortfolio2019",
+  "homepage": "https://heuristic-meninsky-69b21d.netlify.com/",
   "eslintConfig": {
     "extends": "react-app"
   },
