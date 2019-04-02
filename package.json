@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://ronniegross.github.io/marchPortfolio2019/ ",
+  "homepage": "https://ronniegross.github.io/marchPortfolio2019",
   "eslintConfig": {
     "extends": "react-app"
   },
