@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/marchPortfolio2019%20/precache-manifest.d5462b667a03b68a9e1058f6de140ade.js"
+  "/marchPortfolio2019/precache-manifest.380dfaf60653897e03327679c43a0e6d.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/marchPortfolio2019%20/index.html", {
+workbox.routing.registerNavigationRoute("/marchPortfolio2019/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
