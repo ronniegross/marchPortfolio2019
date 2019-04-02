@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import Contact from './Contact.js'
 
 const Container = styled.div`
     a {
@@ -36,6 +37,7 @@ export default class Resume extends Component {
                         <img src="https://i.imgur.com/mktG12j.jpg" alt="resumeJPG" />
                     </div>
                 </Container>
+                <Contact />
             </div>
         )
     }

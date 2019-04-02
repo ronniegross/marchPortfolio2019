@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import Contact from './Contact.js'
 
 const AboutContainer = styled.div`
     padding: 0 40px 0 40px;
@@ -65,6 +66,7 @@ export default class About extends Component {
                                 comments, of if you’d like to collaborate.</p>
                     </div>
                 </AboutContainer>
+                <Contact />
             </div>
         )
     }

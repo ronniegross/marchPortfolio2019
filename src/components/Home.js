@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import Contact from './Contact.js'
 
 const TileContainer = styled.div`
     display: flex;
@@ -87,6 +88,7 @@ export default class Home extends Component {
                         </Tile>
                     </Link>
                 </TileContainer>
+                <Contact />
             </div>
         )
     }

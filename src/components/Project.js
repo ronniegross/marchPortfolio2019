@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import UnderConstruction from './UnderConstruction';
 import { Redirect } from 'react-router-dom';
+import Contact from './Contact.js'
 
 
 
@@ -184,6 +185,7 @@ export default class Project extends Component {
                     </div>
                     <footer></footer>
                 </ProjectWrapper>
+                <Contact />
             </div>
         )
     }
