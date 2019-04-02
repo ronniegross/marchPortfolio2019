@@ -143,32 +143,61 @@ const Hangman = () => {
 
 // Fromage
 const fromageData = {
-    name: "",
-    homePagePic: "",
-    goal: "",
+    name: "Fromage a Trois",
+    homePagePic: "https://i.imgur.com/wcNvnzI.png",
+    goal: "To create a clean, responsive application that allows a user to log their favorite cheeses. Note: these aren't my most beautiful mockups, but I wanted to challenge myself to use a design framework which would do the heavy design lifting for me",
     description: [
+        "Use React as a front-end library", 
+        "Has at least 2 models", 
+        "Has full CRUD on at least one model", 
+        "Be able to Add/Delete on any remaining models",
+        "Use the Mongoose library to write Mongo queries",
+        "Be deployed on Heroku"
     ],
     techUsed: [
+        "React",
+        "Express",
+        "MongoDB",
+        "Node",
+        "Materalize CSS",
+        "Styled Components"
     ],
-    deployedAppLink: "",
-    gitHubLink: "",
+    deployedAppLink: "https://fromage.herokuapp.com/",
+    gitHubLink: "https://github.com/ronniegross/projectThree",
+    ERD: "https://i.imgur.com/MNhZ38Y.jpg",
     mockups: [
         {
-            name: "",
-            link: ""
+            name: "Sign Up",
+            link: "https://i.imgur.com/PBAta1B.jpg"
+        },
+        {
+            name: "Cheese List",
+            link: "https://i.imgur.com/hWcqZJM.jpg"
+        },
+        {
+            name: "Single Cheese",
+            link: "https://i.imgur.com/ssTJH2V.jpg"
+        },
+        {
+            name: "Add Cheese",
+            link: "https://i.imgur.com/V3GwM9w.jpg"
+        },
+        {
+            name: "User Info",
+            link: "https://i.imgur.com/y2cUPIf.jpg"
         },
     ],
     version2: [
-        "",
-        "",
-        ""
+        "I would create high fidelity mockups and use Styled-Components to code those designs",
+        "I would add custom icons to the radio buttons",
+        "Add functionality that would display a default cheese picture if the user did not imput a cheese image link"
     ],
     reflections: [
-        "",
-        ""
+        "I'm eecstatic that I took this opportunity to try out Materialize CSS",
+        "I feel like I learned a lot about project planning from my Gnarnia project, and managed my time much better with Fromage than I did with any of my other projects"
     ],
     UXprocess: "",
-    underConstruction: true
+    underConstruction: false
 };
 
 const Fromage = () => {
@@ -187,6 +216,7 @@ const sgcData = {
     ],
     deployedAppLink: "",
     gitHubLink: "",
+    ERD: "",
     mockups: [
         {
             name: "",
