@@ -18,7 +18,7 @@ const NavContainer = styled.div`
         flex-direction: row;
     }
     li {
-        padding: 0 10px 0 10px;
+        padding: 0 20px 0 20px;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 18px;
         font-weight: 700;
