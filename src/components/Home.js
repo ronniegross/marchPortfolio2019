@@ -88,9 +88,23 @@ export default class Home extends Component {
                         </Tile>
                     </Link>
                 </TileContainer>
+                <TileContainer>
+                    <Link to={'/atlShelterResource'}>
+                        <Tile>
+                            <img src="https://i.imgur.com/zUjublq.png" alt="ASR"></img>
+                        </Tile>
+                    </Link>
+                    {/* <Link to={'/'}>
+                        <Tile>
+                            <img src="#" alt="blank"></img>
+                        </Tile>
+                    </Link> */}
+                </TileContainer>
                 <Contact />
             </div>
         )
     }
 }
+
+
 

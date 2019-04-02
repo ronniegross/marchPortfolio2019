@@ -236,8 +236,44 @@ const sgcData = {
     underConstruction: true
 };
 
+
 const Sgc = () => {
     return <Project project={sgcData} />
+}
+
+// atl Shelter Resource
+const asgData = {
+    name: "",
+    homePagePic: "",
+    goal: "",
+    description: [
+    ],
+    techUsed: [
+    ],
+    deployedAppLink: "",
+    gitHubLink: "",
+    ERD: "",
+    mockups: [
+        {
+            name: "",
+            link: ""
+        },
+    ],
+    version2: [
+        "",
+        "",
+        ""
+    ],
+    reflections: [
+        "",
+        ""
+    ],
+    UXprocess: "",
+    underConstruction: true
+};
+
+const Asg = () => {
+    return <Project project={asgData} />
 }
 
 class App extends Component {
@@ -256,6 +292,7 @@ class App extends Component {
                         <Route exact path="/hangman" component={Hangman} />
                         <Route exact path="/fromage" component={Fromage} />
                         <Route exact path="/SkydiveGreeneCounty" component={Sgc} />
+                        <Route exact path="/atlShelterResource" component={Asg} />
                         <Route exact path="/underconstruction" component={UnderConstruction} />
                     </Switch>
                 </Router>
