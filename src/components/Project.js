@@ -91,7 +91,8 @@ const ProjectWrapper = styled.div`
             font-size: 14px;
         }
         p {
-            margin-left: 10px;
+            /* margin-left: 10px; */
+            margin: 0 10px 0 10px;
             font-size: 16px;
         }
         h4 {
@@ -100,7 +101,8 @@ const ProjectWrapper = styled.div`
         }
         li {
             font-size: 14px;
-            margin: 0;
+            /* margin: 0; */
+            margin-right: 5px;
         }
     }
 `
