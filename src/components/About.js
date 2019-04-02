@@ -63,7 +63,7 @@ export default class About extends Component {
                                 behind what I’m creating.<br/><br/>
                             I hope you’ve enjoyed checking out my featured applications and projects! 
                                 Please feel free to contact me if you have any questions, 
-                                comments, of if you’d like to collaborate.</p>
+                                comments, or if you’d like to collaborate.</p>
                     </div>
                 </AboutContainer>
                 <Contact />
