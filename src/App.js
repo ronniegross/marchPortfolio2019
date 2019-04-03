@@ -171,23 +171,23 @@ const fromageData = {
     mockups: [
         {
             name: "Sign Up",
-            link: "https://i.imgur.com/PBAta1B.jpg"
+            link: "https://i.imgur.com/D0Q0576.jpg"
         },
         {
             name: "Cheese List",
-            link: "https://i.imgur.com/hWcqZJM.jpg"
+            link: "https://i.imgur.com/zOTW45g.jpg"
         },
         {
             name: "Single Cheese",
-            link: "https://i.imgur.com/ssTJH2V.jpg"
+            link: "https://i.imgur.com/xpkspCW.jpg"
         },
         {
             name: "Add Cheese",
-            link: "https://i.imgur.com/V3GwM9w.jpg"
+            link: "https://i.imgur.com/KeihsLM.jpg"
         },
         {
             name: "User Info",
-            link: "https://i.imgur.com/y2cUPIf.jpg"
+            link: "https://i.imgur.com/5yNVF6o.jpg"
         },
     ],
     version2: [
