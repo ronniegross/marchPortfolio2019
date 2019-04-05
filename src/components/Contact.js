@@ -36,7 +36,7 @@ export default class Contact extends Component {
                         <a href="https://github.com/ronniegross"><img src="https://i.imgur.com/V8gj45m.png" alt="githubIcon" /></a>
                     </div>
                     <div className="imgContainer">
-                        <a href="mailto:ronnie@grossgui.io?Subject=Hello There!" target="_top"><img src="https://i.imgur.com/HdMn8k2.png" alt="mailIcon" /></a>
+                        <a href="mailto:ronniegross32@gmail.com?Subject=Hello There!" target="_top"><img src="https://i.imgur.com/HdMn8k2.png" alt="mailIcon" /></a>
                     </div>
             </Wrapper>
         )
