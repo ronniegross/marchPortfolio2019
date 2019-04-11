@@ -36,7 +36,7 @@ export default class About extends Component {
             <div>
                 <AboutContainer>
                     <div className="headshotContainer">
-                        <img src="https://i.imgur.com/8uBHPES.jpg" alt="headshot"></img>
+                        <img src="https://i.imgur.com/Ae2Q59K.jpg" alt="headshot"></img>
                     </div>
                     <div className="infoContainer">
                     <p>Hey there! Thanks for checking out my portfolio. 
