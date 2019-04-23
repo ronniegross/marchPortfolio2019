@@ -40,7 +40,7 @@ export default class About extends Component {
                     </div>
                     <div className="infoContainer">
                     <p>Hey there! Thanks for checking out my portfolio. 
-                                My name is Ronnie, and I’m glad you stopped by!<br/><br/>
+                                I’m stoked you stopped by!<br/><br/>
                             I spent years at the Georgia Institute of Technology studying 
                             tangible design, and made the jump to User Experience Design 
                             while studying at the Eindhoven University of Technology in Eindhoven, 
