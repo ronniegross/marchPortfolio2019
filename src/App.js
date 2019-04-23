@@ -245,7 +245,80 @@ const Sgc = () => {
 }
 
 // atl Shelter Resource
-const asgData = {
+const asrData = {
+    name: "Atlanta Shelter Resource",
+    homePagePic: "https://github.com/ronniegross/projectFour/blob/master/ASR_Mockups_StyleGuide/ASR_Home_Mockup.jpg?raw=true",
+    goal: "The goal of this project was to create an easy to use application to assist Atlanta's homeless community in finding shelter and community. Mobile responsiveness was the top priority as most homeless folks have access to a smart phone, which would allow them to easily utilize a web application.",
+    description: [
+        "Use React as a front-end library",
+        "Have at least 3 models",
+        "Have full CRUD on at least one of your models",
+        "Be able to Add/Delete on any remaining models",
+        "Include a 3rd Party API",
+        "You must explicitly write the 3rd Party API calls in your app. Installing an npm package that includes API calls will not meet the requirements",
+        "Have high quality code",
+        "Be deployed on Heroku",
+    ],
+    techUsed: [
+        "React",
+        "Django",
+        "Axios",
+        "Styled-Components",
+        "Sketch",
+    ],
+    deployedAppLink: "https://atlanta-shelter-resource.herokuapp.com/",
+    gitHubLink: "https://github.com/ronniegross/projectFour/tree/master/ASR_Mockups_StyleGuide",
+    ERD: "https://github.com/ronniegross/projectFour/blob/master/ASR_Mockups_StyleGuide/ASR_MVP.jpg?raw=true",
+    mockups: [
+        {
+            name: "Resource List",
+            link: "https://github.com/ronniegross/projectFour/blob/master/ASR_Mockups_StyleGuide/ASR_Home.jpg?raw=true"
+        },
+        {
+            name: "Single Resource",
+            link: "https://github.com/ronniegross/projectFour/blob/master/ASR_Mockups_StyleGuide/ASR_Single_Resource_MVP.jpg?raw=true"
+        },
+        {
+            name: "Map",
+            link: "https://github.com/ronniegross/projectFour/blob/master/ASR_Mockups_StyleGuide/ASR_Maps.jpg?raw=true"
+        },
+        {
+            name: "Links",
+            link: "https://github.com/ronniegross/projectFour/blob/master/ASR_Mockups_StyleGuide/ASR_Links.jpg?raw=true"
+        },
+        {
+            name: "Number Index",
+            link: "https://github.com/ronniegross/projectFour/blob/master/ASR_Mockups_StyleGuide/ASR_Number_Index.jpg?raw=true"
+        },
+        {
+            name: "User Account",
+            link: "https://github.com/ronniegross/projectFour/blob/master/ASR_Mockups_StyleGuide/ASR_Account_Info.jpg?raw=true"
+        },
+        {
+            name: "Style Guide",
+            link: "https://github.com/ronniegross/projectFour/blob/master/ASR_Mockups_StyleGuide/ASR_Style_Guide.jpg?raw=true"
+        }
+    ],
+    version2: [
+        "Add filtering resources by age, gender, family status, and distance",
+        "To resources add: intake protocols, dates, times, services offered: dental, health and laundry, room type, high quality pictures",
+        "Create user authentication and authorization",
+        "Add Google Maps functionality to individual shelters in an easy to use, mobile responsive format"
+    ],
+    reflections: [
+        "I'm really proud of the function I created to alphabetically sort the resources by their resource_name",
+        "This has been my passion project, and it was inspired by research I did during my senior year at Georgia Tech. I am planning on continuing to develop and refine this app after this bootcamp ends"
+    ],
+    UXprocess: "",
+    underConstruction: false
+};
+
+const Asr = () => {
+    return <Project project={asrData} />
+}
+
+// blank shleter template
+const blankData = {
     name: "",
     homePagePic: "",
     goal: "",
@@ -275,8 +348,8 @@ const asgData = {
     underConstruction: true
 };
 
-const Asg = () => {
-    return <Project project={asgData} />
+const blank = () => {
+    return <Project project={blankData} />
 }
 
 class App extends Component {
@@ -295,7 +368,8 @@ class App extends Component {
                         <Route exact path="/hangman" component={Hangman} />
                         <Route exact path="/fromage" component={Fromage} />
                         <Route exact path="/SkydiveGreeneCounty" component={Sgc} />
-                        <Route exact path="/atlShelterResource" component={Asg} />
+                        <Route exact path="/atlShelterResource" component={Asr} />
+                        <Route exact path="/blankData" component={blank} />
                         <Route exact path="/underconstruction" component={UnderConstruction} />
                     </Switch>
                 </Router>
