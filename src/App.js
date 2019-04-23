@@ -217,6 +217,7 @@ const sgcData = {
     ],
     techUsed: [
     ],
+    mobileResponsive: '',
     deployedAppLink: "",
     gitHubLink: "",
     ERD: "",
@@ -327,6 +328,7 @@ const blankData = {
     ],
     techUsed: [
     ],
+    mobileResponsive: '',
     deployedAppLink: "",
     gitHubLink: "",
     ERD: "",
