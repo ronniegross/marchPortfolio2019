@@ -266,6 +266,7 @@ const asrData = {
         "Styled-Components",
         "Sketch",
     ],
+    mobileResponsive: 'Yes',
     deployedAppLink: "https://atlanta-shelter-resource.herokuapp.com/",
     gitHubLink: "https://github.com/ronniegross/projectFour/tree/master/ASR_Mockups_StyleGuide",
     ERD: "https://github.com/ronniegross/projectFour/blob/master/ASR_Mockups_StyleGuide/ASR_MVP.jpg?raw=true",
