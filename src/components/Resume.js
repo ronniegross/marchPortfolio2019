@@ -32,7 +32,7 @@ export default class Resume extends Component {
         return (
             <div>
                 <Container>
-                    <a href="https://drive.google.com/file/d/1E6_p-J4KGn5O9cxZjcJW38DGiKJSZJ6Q/view?usp=sharing">Link to PDF resume</a>
+                    <a href="https://drive.google.com/file/d/1AEXox1W2kUYw_fDcjKYxfQ0UqG_zG6Aq/view?usp=sharing">Link to PDF resume</a>
                     <div>
                         <img src="https://i.imgur.com/EBWf9Zb.jpg" alt="resumeJPG" />
                     </div>
