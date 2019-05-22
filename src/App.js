@@ -41,6 +41,7 @@ const gnarniaData = {
     deployedAppLink: "https://gnarnia.herokuapp.com/",
     gitHubLink: "https://github.com/ronniegross/projectTwo",
     // prototypeLink: "https://invis.io/MFS5M13ZAEY",
+
     ERD: "https://github.com/ronniegross/projectTwo/blob/master/gnarnia%20mockups%20readme/ERD_Final_Gnarnia.jpg?raw=true",
     mockups: [
         {
@@ -322,7 +323,7 @@ const Asr = () => {
     return <Project project={asrData} />
 }
 
-// blank shleter template
+// blank template
 const blankData = {
     name: "",
     homePagePic: "",
