@@ -124,6 +124,7 @@ export default class Project extends Component {
             return (<Redirect to={`/underconstruction`} />)
         }
         return (
+            
             <div>
                 <ProjectWrapper>
                     <h1>{this.props.project.name}</h1>
