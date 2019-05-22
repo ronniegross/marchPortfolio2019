@@ -115,6 +115,15 @@ const ProjectWrapper = styled.div`
 `
 
 export default class Project extends Component {
+    state = {
+        prototype: ""
+    }
+
+    componentDidMount() {
+        this.setState(
+            { prototype: this.props.project.prototypeLink }
+        )
+    }
 
     render() {
         // i know that i need a ternary statement to see if there is information within various array but where
@@ -124,7 +133,7 @@ export default class Project extends Component {
             return (<Redirect to={`/underconstruction`} />)
         }
         return (
-            
+
             <div>
                 <ProjectWrapper>
                     <h1>{this.props.project.name}</h1>
@@ -133,7 +142,16 @@ export default class Project extends Component {
                     <p>{this.props.project.goal}</p>
                     <h3 className="deployedLink"><a href={this.props.project.deployedAppLink}>Link </a>To Deployed App</h3>
                     <h3 className="githubLink"><a href={this.props.project.gitHubLink}>Link </a>To Github</h3>
-                    <h3 className="prototypeLink"><a href={this.props.project.prototypeLink}>Link </a>To Prototype</h3>
+                    {
+                        this.state.prototype ? 
+                            <h3 className="githubLink"><a href={this.state.prototype}>Link </a>Prototype</h3>
+                            : null
+                    }
+                    {/* <h3 className="prototypeLink">Prototype: {
+
+                    
+                    
+                        }{this.props.project.mobileResponsive}</h3> */}
                     <h3 className="listTitle">Technologies Used:</h3>
                     <div>
                         <ul>
