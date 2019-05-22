@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import HeaderContainer from './components/Header.js'
 import NavBar from './components/NavBar.js'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 // import { BrowserRouter as HashRouter, Route, Switch } from 'react-router-dom'
 
 import Home from './components/Home.js'
@@ -359,7 +360,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Router>
+                <HashRouter>
                     <HeaderContainer />
                     <NavBar></NavBar>
                     <Switch>
@@ -375,7 +376,7 @@ class App extends Component {
                         <Route exact path="/blankData" component={blank} />
                         <Route exact path="/underconstruction" component={UnderConstruction} />
                     </Switch>
-                </Router>
+                </HashRouter>
             </div>
         );
     }
