@@ -132,7 +132,7 @@ export default class Project extends Component {
                     <p>{this.props.project.goal}</p>
                     <h3 className="deployedLink"><a href={this.props.project.deployedAppLink}>Link </a>To Deployed App</h3>
                     <h3 className="githubLink"><a href={this.props.project.gitHubLink}>Link </a>To Github</h3>
-
+                    <h3 className="prototypeLink"><a href={this.props.project.prototypeLink}>Link </a>To Prototype</h3>
                     <h3 className="listTitle">Technologies Used:</h3>
                     <div>
                         <ul>

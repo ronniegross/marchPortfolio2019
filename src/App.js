@@ -221,6 +221,7 @@ const sgcData = {
     mobileResponsive: '',
     deployedAppLink: "",
     gitHubLink: "",
+    prototypeLink: "",
     ERD: "",
     mockups: [
         {
