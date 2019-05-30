@@ -213,35 +213,42 @@ const Fromage = () => {
 
 // Skydive Greene County
 const sgcData = {
-    name: "",
-    homePagePic: "",
-    goal: "",
-    description: [
-    ],
+    name: "Skydive Greene County",
+    homePagePic: "https://github.com/ronniegross/sgc-redesign/blob/master/SGC_Mockups_5.30/Home.jpg?raw=true",
+    goal: "To redesign and develop an intuitive, clean, and XTREME website",
     techUsed: [
+        "React",
+        "styled-components",
+        "Sketch",
     ],
-    mobileResponsive: '',
-    deployedAppLink: "",
-    gitHubLink: "",
-    prototypeLink: "",
-    ERD: "",
+    mobileResponsive: 'Yes',
+    deployedAppLink: "https://determined-lamarr-71e109.netlify.com/#/",
+    gitHubLink: "https://github.com/ronniegross/sgc-redesign",
     mockups: [
         {
-            name: "",
-            link: ""
+            name: "Home",
+            link: "https://github.com/ronniegross/sgc-redesign/blob/master/SGC_Mockups_5.30/Home.jpg?raw=true"
+        },
+        {
+            name: "First Time Jumpers",
+            link: "https://github.com/ronniegross/sgc-redesign/blob/master/SGC_Mockups_5.30/First%20Time%20Jumpers.jpg?raw=true"
+        },
+        {
+            name: "Experienced Jumpers",
+            link: "https://github.com/ronniegross/sgc-redesign/blob/master/SGC_Mockups_5.30/Experienced%20Jumpers.jpg?raw=true"
+        },
+        {
+            name: "Pricing",
+            link: "https://github.com/ronniegross/sgc-redesign/blob/master/SGC_Mockups_5.30/Pricing.jpg?raw=true"
+        },
+        {
+            name: "FAQs",
+            link: "https://github.com/ronniegross/sgc-redesign/blob/master/SGC_Mockups_5.30/FAQ.jpg?raw=true"
         },
     ],
-    version2: [
-        "",
-        "",
-        ""
-    ],
-    reflections: [
-        "",
-        ""
-    ],
+    reflections: [],
     UXprocess: "",
-    underConstruction: true
+    underConstruction: false
 };
 
 

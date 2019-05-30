@@ -143,7 +143,7 @@ export default class Project extends Component {
                     <h3 className="deployedLink"><a href={this.props.project.deployedAppLink}>Link </a>To Deployed App</h3>
                     <h3 className="githubLink"><a href={this.props.project.gitHubLink}>Link </a>To Github</h3>
                     {
-                        this.state.prototype ? 
+                        this.state.prototype ?
                             <h3 className="githubLink"><a href={this.state.prototype}>Link </a>Prototype</h3>
                             : null
                     }
@@ -165,16 +165,25 @@ export default class Project extends Component {
                         </ul>
                     </div>
                     <h3 className="mobileResponsiveTitle">Mobile Responsive: {this.props.project.mobileResponsive}</h3>
-                    <h3 className="listTitle">Description:</h3>
-                    <ul>
-                        {
-                            this.props.project.description.map(singleDescription => {
-                                return (
-                                    <li>{singleDescription}</li>
-                                )
-                            })
-                        }
-                    </ul>
+                    {
+                        this.props.project.description ?
+                            <h3 className="listTitle">Description:</h3>
+                            : null
+                    }
+                    {
+                        this.props.project.description ?
+                            <ul>
+                                {
+                                    this.props.project.description.map(singleDescription => {
+                                        return (
+                                            <li>{singleDescription}</li>
+                                        )
+                                    })
+                                }
+                            </ul>
+                            : null
+                    }
+
                     {this.props.project.erd ? <h3>ERD</h3> : null}
                     {this.props.project.erd ? <img src={this.props.project.ERD} alt="ERD"></img> : null}
                     <h3 className="mockupTitle">Mockups</h3>
@@ -189,16 +198,24 @@ export default class Project extends Component {
                         })
                     }
                     <div>
-                        <h3 className="listTitle">Version 2:</h3>
-                        <ul>
-                            {
-                                this.props.project.version2.map(version2idea => {
-                                    return (
-                                        <li>{version2idea}</li>
-                                    )
-                                })
-                            }
-                        </ul>
+                        {
+                            this.props.project.version2 ?
+                                <h3 className="listTitle">Version 2:</h3>
+                                : null
+                        }
+                        {
+                            this.props.version2 ?
+                                <ul>
+                                    {
+                                        this.props.project.version2.map(version2idea => {
+                                            return (
+                                                <li>{version2idea}</li>
+                                            )
+                                        })
+                                    }
+                                </ul>
+                                : null
+                        }
                     </div>
                     <div>
                         {this.props.project.reflections.length > 0 ? <h3 className="listTitle">Reflections:</h3> : null}
