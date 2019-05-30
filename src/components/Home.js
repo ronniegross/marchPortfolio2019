@@ -13,6 +13,7 @@ const TileContainer = styled.div`
     }
 `
 
+
 const Tile = styled.div`
     a {
         margin: 0;
@@ -94,12 +95,24 @@ export default class Home extends Component {
                             <img src="https://i.imgur.com/YSiWjvV.png" alt="SGC"></img>
                         </Tile>
                     </Link>
-                    {/* <Link to={'/'}>
+                    <Link to={'/BeeResourceful'}>
+                        <Tile>
+                            <img src="https://i.imgur.com/T4lnV2E.png" alt="Bee Resourceful"></img>
+                        </Tile>
+                    </Link>
+                </TileContainer>
+                {/* <TileContainer>
+                    <Link to={''}>
+                        <Tile>
+                            <img src="" alt=""></img>
+                        </Tile>
+                    </Link>
+                    <Link to={'/'}>
                         <Tile>
                             <img src="#" alt="blank"></img>
                         </Tile>
-                    </Link> */}
-                </TileContainer>
+                    </Link>
+                </TileContainer> */}
                 <Contact />
             </div>
         )

@@ -323,6 +323,44 @@ const Asr = () => {
     return <Project project={asrData} />
 }
 
+// bee resourceful
+
+const beeResourcefulData = {
+    name: "",
+    homePagePic: "",
+    goal: "",
+    description: [
+    ],
+    techUsed: [
+    ],
+    mobileResponsive: '',
+    deployedAppLink: "",
+    gitHubLink: "",
+    ERD: "",
+    mockups: [
+        {
+            name: "",
+            link: ""
+        },
+    ],
+    version2: [
+        "",
+        "",
+        ""
+    ],
+    reflections: [
+        "",
+        ""
+    ],
+    UXprocess: "",
+    underConstruction: true
+};
+
+const Beeresourceful = () => {
+    return <Project project={beeResourcefulData} />
+}
+
+
 // blank template
 const blankData = {
     name: "",
@@ -376,6 +414,7 @@ class App extends Component {
                         <Route exact path="/fromage" component={Fromage} />
                         <Route exact path="/SkydiveGreeneCounty" component={Sgc} />
                         <Route exact path="/atlShelterResource" component={Asr} />
+                        <Route exact path="/BeeResourceful" component={Beeresourceful} />
                         <Route exact path="/blankData" component={blank} />
                         <Route exact path="/underconstruction" component={UnderConstruction} />
                     </Switch>
