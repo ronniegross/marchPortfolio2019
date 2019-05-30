@@ -66,14 +66,14 @@ export default class Home extends Component {
         return (
             <div>
                 <TileContainer>
+                    <Link to={'/SkydiveGreeneCounty'}>
+                        <Tile>
+                            <img src="https://i.imgur.com/YSiWjvV.png" alt="SGC"></img>
+                        </Tile>
+                    </Link>
                     <Link to={'/atlShelterResource'}>
                         <Tile>
                             <img src="https://i.imgur.com/UzO19Cw.png" alt="ASR"></img>
-                        </Tile>
-                    </Link>
-                    <Link to={'/fromage'}>
-                        <Tile>
-                            <img src="https://i.imgur.com/RMgYAv0.png" alt="Fromage"></img>
                         </Tile>
                     </Link>
                 </TileContainer>
@@ -90,9 +90,9 @@ export default class Home extends Component {
                     </Link>
                 </TileContainer>
                 <TileContainer>
-                    <Link to={'/SkydiveGreeneCounty'}>
+                    <Link to={'/fromage'}>
                         <Tile>
-                            <img src="https://i.imgur.com/YSiWjvV.png" alt="SGC"></img>
+                            <img src="https://i.imgur.com/RMgYAv0.png" alt="Fromage"></img>
                         </Tile>
                     </Link>
                     <Link to={'/BeeResourceful'}>
