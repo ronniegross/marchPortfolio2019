@@ -199,7 +199,7 @@ const fromageData = {
         "Add functionality that would display a default cheese picture if the user did not imput a cheese image link"
     ],
     reflections: [
-        "I'm eecstatic that I took this opportunity to try out Materialize CSS",
+        "I'm ecstatic that I took this opportunity to try out Materialize CSS",
         "I feel like I learned a lot about project planning from my Gnarnia project, and managed my time much better with Fromage than I did with any of my other projects"
     ],
     UXprocess: "",
@@ -246,7 +246,15 @@ const sgcData = {
             link: "https://github.com/ronniegross/sgc-redesign/blob/master/SGC_Mockups_5.30/FAQ.jpg?raw=true"
         },
     ],
-    reflections: [],
+    reflections: [
+        "Creating a real world website was an absolute blast",
+        "Because I did both the design and the development, I found the biggest challenge of this freelance project was determining what the client actually wanted when she asked for something",
+        "For example, she specifically asked for the view more / view less modals to be text aligned in the center, but she actually wanted the whole modal to be easier to read",
+        "After determining what she was actually asking for, I added greater margin between each title and information tag and we were both satisifed with the end result",
+        "One of my bigger developer challenges came from the FAQ page - I created an FAQ modal component which would link to the the FAQ page, and actually scrolled to the selected question between components using a node module called react-scroll",
+        "I also created the mobile nav bar from scratch, and I am extremely satisfied with the result",
+        "The site is more or less finished, I'm just waiting on a history write up from the owner, staff headshots, and various skydiving pictures before deploying to Netlify and linking their domain name"
+    ],
     UXprocess: "",
     underConstruction: false
 };
@@ -319,8 +327,9 @@ const asrData = {
         "Add Google Maps functionality to individual shelters in an easy to use, mobile responsive format"
     ],
     reflections: [
-        "I'm really proud of the function I created to alphabetically sort the resources by their resource_name",
-        "This has been my passion project, and it was inspired by research I did during my senior year at Georgia Tech. I am planning on continuing to develop and refine this app after this bootcamp ends"
+        "I'm really proud of the function I created to alphabetically sort the resources by their resource name",
+        "This has been my passion project, and it was inspired by research I did during my senior year at Georgia Tech",
+        "I am planning on continuing to develop and refine this app after this bootcamp ends: see Bee Resourceful on the Projects page"
     ],
     UXprocess: "",
     underConstruction: false

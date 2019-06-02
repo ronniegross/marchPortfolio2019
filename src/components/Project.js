@@ -204,7 +204,7 @@ export default class Project extends Component {
                                 : null
                         }
                         {
-                            this.props.version2 ?
+                            this.props.project.version2 ?
                                 <ul>
                                     {
                                         this.props.project.version2.map(version2idea => {
