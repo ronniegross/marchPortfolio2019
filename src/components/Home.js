@@ -68,7 +68,7 @@ export default class Home extends Component {
                 <TileContainer>
                     <Link to={'/SkydiveGreeneCounty'}>
                         <Tile>
-                            <img src="https://i.imgur.com/YSiWjvV.png" alt="SGC"></img>
+                            <img src="https://i.imgur.com/ymkv2fj.png" alt="SGC"></img>
                         </Tile>
                     </Link>
                     <Link to={'/atlShelterResource'}>
