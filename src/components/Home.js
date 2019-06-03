@@ -71,6 +71,19 @@ export default class Home extends Component {
                             <img src="https://i.imgur.com/ymkv2fj.png" alt="SGC"></img>
                         </Tile>
                     </Link>
+                    <Link to={'/BeeResourceful'}>
+                        <Tile>
+                            <img src="https://i.imgur.com/T4lnV2E.png" alt="Bee Resourceful"></img>
+                        </Tile>
+                    </Link>
+                </TileContainer>
+                <TileContainer>
+                    <Link to={'/fromage'}>
+                        <Tile>
+                            <img src="https://i.imgur.com/RMgYAv0.png" alt="Fromage"></img>
+                        </Tile>
+                    </Link>
+
                     <Link to={'/atlShelterResource'}>
                         <Tile>
                             <img src="https://i.imgur.com/UzO19Cw.png" alt="ASR"></img>
@@ -86,18 +99,6 @@ export default class Home extends Component {
                     <Link to={'/hangman'}>
                         <Tile>
                             <img src="https://i.imgur.com/T7vIJfb.png" alt="Hangman Game"></img>
-                        </Tile>
-                    </Link>
-                </TileContainer>
-                <TileContainer>
-                    <Link to={'/fromage'}>
-                        <Tile>
-                            <img src="https://i.imgur.com/RMgYAv0.png" alt="Fromage"></img>
-                        </Tile>
-                    </Link>
-                    <Link to={'/BeeResourceful'}>
-                        <Tile>
-                            <img src="https://i.imgur.com/T4lnV2E.png" alt="Bee Resourceful"></img>
                         </Tile>
                     </Link>
                 </TileContainer>
