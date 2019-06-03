@@ -12,6 +12,7 @@ import Resume from './components/Resume.js'
 import Contact from './components/Contact.js'
 import Project from './components/Project'
 import UnderConstruction from './components/UnderConstruction'
+import UXProject from './components/UXProject.js'
 
 
 // Gnarnia
@@ -342,38 +343,94 @@ const Asr = () => {
 // bee resourceful
 
 const beeResourcefulData = {
-    name: "",
-    homePagePic: "",
-    goal: "",
-    description: [
+    name: "BEE Resourceful",
+    homePagePic: "https://github.com/ronniegross/BEE_Resourceful/blob/master/BEE_Resourceful_Final_Mockups_JPEG/Home.png?raw=true",
+    goal: "To create a welcoming, easy to use application which would allow users to easily find social resources in their city.",
+    UXprocess: [
+        "I first met Kyendal at a meet and hire event for recent grads of General Assembly's Web Development Immersive Bootcamp. She gave me a brief overview of her company, BEE Resourceful, and how it closely aligned with my final project at General Assembly, the Atlanta Shelter Resource. We exchanged contact info and arranged a time for me to meet with her business partner, Kharyne, and to learn more about their application.",
+        "Upon meeting with BEE Resourceful for a second time, they explained that they were applying to The Farm Atlanta Accelerator, and needed a working prototype to submit with their application.",
+        "At this stage, they were still determining the scope of their application and we set up a later appointment to discuss the full business requirements of their application, and the corresponding M.V.P. prototype that they would need to submit with their application in the coming weeks.",
+        "Once they determined their final business requirements, we had another meeting and discussed the required features of the prototype that I would be creating for them. I got to work once everyone was satisifed with the prototype requirements, the project rate, and the estimated time to complete the project (roughly 16 hours).",
+        "Per our contract, I first created what I call 'shell mockups', which are very basic grayscale mockups that only include the necessary features and information included on the page. I also created very basic graphics and a color scheme based on BEE Resourceful's logo, and the preferences of the owners. I then had a meeting with BEE Resourceful to discuss the shell mockups and to finalize the color palette.",
+        "After receiving approval of the shell mockups, I dove into the process of creating the prototype. I first started with a non-logged in view of the resource page, and an individual resource page after searching and selecting a tile.",
+        "Per the business requirements, the user would need to be logged into the application in order to submit a resource, so I quickly realized that there would need to be an entirely new set of screens where the user was logged into the application. I then made a login page, a sign up page, a user account page, and versions of the mockups where the user is logged in.",
+        "At this point I started creating the prototype using the Craft plugin for Sketch, created by InVision. A chunk of this time was spent trying to break my app, and double checking that every button was linked to the proper screen.",
+        "I did some informal user testing with friends to see if there was any major pain points, and to make sure everything was linked properly.",
+        "When I was satisfied with the end result, I sent the prototype link to BEE Resourceful. They asked for some text areas to be reworded, and to create functionality for each tile on the resource page to link to another screen explaining that resources were not yet available for that section.",
+        "Upon completing these corrections, the project was finished."
     ],
     techUsed: [
+        "Sketch",
+        "InVision"
     ],
-    mobileResponsive: '',
-    deployedAppLink: "",
-    gitHubLink: "",
-    ERD: "",
+    prototype: "https://invis.io/XESB0XKCBQ8#/366498253_Home",
     mockups: [
         {
-            name: "",
-            link: ""
+            name: "Shell Mockup Home",
+            link: "https://github.com/ronniegross/BEE_Resourceful/blob/master/BEE_Resourceful_Shell_Mockups_JPEG/View_Resources_Basic.jpg?raw=true"
+        },
+        {
+            name: "Shell Mockup Search",
+            link: "https://github.com/ronniegross/BEE_Resourceful/blob/master/BEE_Resourceful_Shell_Mockups_JPEG/Show_All_Resource_In_Category_Search_Basic.jpg?raw=true"
+        },
+        {
+            name: "Shell Mockup Search Extended",
+            link: "https://github.com/ronniegross/BEE_Resourceful/blob/master/BEE_Resourceful_Shell_Mockups_JPEG/View_Single_Resource_Basic.jpg?raw=true"
+        },
+        {
+            name: "Shell Mockup Tile Search",
+            link: "https://github.com/ronniegross/BEE_Resourceful/blob/master/BEE_Resourceful_Shell_Mockups_JPEG/Show_All_Resource_In_Category_Basic.jpg?raw=true"
+        },
+        {
+            name: "Shell Mockup Add A Resource",
+            link: "https://github.com/ronniegross/BEE_Resourceful/blob/master/BEE_Resourceful_Shell_Mockups_JPEG/Add_Resources_Basic.jpg?raw=true"
+        },
+        {
+            name: "Prototype Home",
+            link: "https://github.com/ronniegross/BEE_Resourceful/blob/master/BEE_Resourceful_Final_Mockups_JPEG/Home.png?raw=true"
+        },
+        {
+            name: "Prototype Tile Search",
+            link: "https://github.com/ronniegross/BEE_Resourceful/blob/master/BEE_Resourceful_Final_Mockups_JPEG/Food_Tile_Results_Expanded.png?raw=true"
+        },
+        {
+            name: "Prototype Tile Search Extended",
+            link: "https://github.com/ronniegross/BEE_Resourceful/blob/master/BEE_Resourceful_Final_Mockups_JPEG/Food_Tile_Results_Expanded%20(1).png?raw=true"
+        },
+        {
+            name: "Prototype Tile Search No Results",
+            link: "https://github.com/ronniegross/BEE_Resourceful/blob/master/BEE_Resourceful_Final_Mockups_JPEG/Financial_Assistance_Tile.png?raw=true"
+        },
+        {
+            name: "Prototype Login",
+            link: "https://github.com/ronniegross/BEE_Resourceful/blob/master/BEE_Resourceful_Final_Mockups_JPEG/Log_In_Submit_To_Atlanta.jpg?raw=true"
+        },
+        {
+            name: "Prototype Signup",
+            link: "https://github.com/ronniegross/BEE_Resourceful/blob/master/BEE_Resourceful_Final_Mockups_JPEG/Sign_Up_Gender.jpg?raw=true"
+        },
+        {
+            name: "Prototype Submit a Resource",
+            link: "https://github.com/ronniegross/BEE_Resourceful/blob/master/BEE_Resourceful_Final_Mockups_JPEG/Submit_A_Resource.png?raw=true"
+        },
+        {
+            name: "Prototype Post Submit Screen",
+            link: "https://github.com/ronniegross/BEE_Resourceful/blob/master/BEE_Resourceful_Final_Mockups_JPEG/Submitted_Resource_Screen.png?raw=true"
+        },
+        {
+            name: "Prototype User Account",
+            link: "https://github.com/ronniegross/BEE_Resourceful/blob/master/BEE_Resourceful_Final_Mockups_JPEG/User_Account.png?raw=true"
         },
     ],
-    version2: [
-        "",
-        "",
-        ""
-    ],
     reflections: [
-        "",
-        ""
+        "I'm very grateful for the opportunity to continue working on an application that has a direct impact on my community.",
+        "This was my first freelance UX project and my first UX project since starting General Assembly's Web Development Immersive Bootcamp, and I had some moments of second guessing myself during the graphic design and color decisions that I had to make throughout this process. I documented my UX process at the start of this page, and trusting that process helped give me confidence to dive head first into this project."
     ],
-    UXprocess: "",
-    underConstruction: true
+    underConstruction: false
 };
 
 const Beeresourceful = () => {
-    return <Project project={beeResourcefulData} />
+    return <UXProject project={beeResourcefulData} />
 }
 
 

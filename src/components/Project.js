@@ -128,7 +128,7 @@ export default class Project extends Component {
     render() {
         // i know that i need a ternary statement to see if there is information within various array but where
         // and how
-        console.log(this.props)
+        // console.log(this.props)
         if (this.props.project.underConstruction === true) {
             return (<Redirect to={`/underconstruction`} />)
         }
