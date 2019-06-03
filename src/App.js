@@ -345,7 +345,7 @@ const Asr = () => {
 const beeResourcefulData = {
     name: "BEE Resourceful",
     homePagePic: "https://github.com/ronniegross/BEE_Resourceful/blob/master/BEE_Resourceful_Final_Mockups_JPEG/Home.png?raw=true",
-    goal: "To create a welcoming, easy to use application which would allow users to easily find social resources in their city.",
+    goal: "To create a welcoming, easy to use application which would allow users to quickly find social resources in their city.",
     UXprocess: [
         "I first met Kyendal at a meet and hire event for recent grads of General Assembly's Web Development Immersive Bootcamp. She gave me a brief overview of her company, BEE Resourceful, and how it closely aligned with my final project at General Assembly, the Atlanta Shelter Resource. We exchanged contact info and arranged a time for me to meet with her business partner, Kharyne, and to learn more about their application.",
         "Upon meeting with BEE Resourceful for a second time, they explained that they were applying to The Farm Atlanta Accelerator, and needed a working prototype to submit with their application.",
