@@ -26,9 +26,9 @@ export default class Contact extends Component {
     render() {
         return (
             <Wrapper>
-                    <div className="imgContainer">
+                    {/* <div className="imgContainer">
                         <a href="https://www.instagram.com/grossgui.io/"><img src="https://i.imgur.com/jgVdAn9.png" alt="instagramIcon" /></a>
-                    </div>
+                    </div> */}
                     <div className="imgContainer">
                         <a href="https://www.linkedin.com/in/ronniegross"><img src="https://i.imgur.com/ewtIvba.png" alt="linkedinIcon" /></a>
                     </div>
